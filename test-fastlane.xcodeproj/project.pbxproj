@@ -13,18 +13,10 @@
 		FC7750AF1D52A200005D0B5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC7750AE1D52A200005D0B5F /* Assets.xcassets */; };
 		FC7750B21D52A201005D0B5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC7750B01D52A201005D0B5F /* LaunchScreen.storyboard */; };
 		FC7750BD1D52A201005D0B5F /* test_fastlaneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7750BC1D52A201005D0B5F /* test_fastlaneTests.swift */; };
-		FC7750C81D52A201005D0B5F /* test_fastlaneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7750C71D52A201005D0B5F /* test_fastlaneUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		FC7750B91D52A201005D0B5F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FC77509C1D52A200005D0B5F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FC7750A31D52A200005D0B5F;
-			remoteInfo = "test-fastlane";
-		};
-		FC7750C41D52A201005D0B5F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = FC77509C1D52A200005D0B5F /* Project object */;
 			proxyType = 1;
@@ -44,7 +36,6 @@
 		FC7750B81D52A201005D0B5F /* test-fastlaneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "test-fastlaneTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC7750BC1D52A201005D0B5F /* test_fastlaneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test_fastlaneTests.swift; sourceTree = "<group>"; };
 		FC7750BE1D52A201005D0B5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FC7750C31D52A201005D0B5F /* test-fastlaneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "test-fastlaneUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC7750C71D52A201005D0B5F /* test_fastlaneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test_fastlaneUITests.swift; sourceTree = "<group>"; };
 		FC7750C91D52A201005D0B5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,13 +49,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		FC7750B51D52A201005D0B5F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FC7750C01D52A201005D0B5F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -89,7 +73,6 @@
 			children = (
 				FC7750A41D52A200005D0B5F /* test-fastlane.app */,
 				FC7750B81D52A201005D0B5F /* test-fastlaneTests.xctest */,
-				FC7750C31D52A201005D0B5F /* test-fastlaneUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -163,24 +146,6 @@
 			productReference = FC7750B81D52A201005D0B5F /* test-fastlaneTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		FC7750C21D52A201005D0B5F /* test-fastlaneUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FC7750D21D52A201005D0B5F /* Build configuration list for PBXNativeTarget "test-fastlaneUITests" */;
-			buildPhases = (
-				FC7750BF1D52A201005D0B5F /* Sources */,
-				FC7750C01D52A201005D0B5F /* Frameworks */,
-				FC7750C11D52A201005D0B5F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				FC7750C51D52A201005D0B5F /* PBXTargetDependency */,
-			);
-			name = "test-fastlaneUITests";
-			productName = "test-fastlaneUITests";
-			productReference = FC7750C31D52A201005D0B5F /* test-fastlaneUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -195,10 +160,6 @@
 						CreatedOnToolsVersion = 7.3.1;
 					};
 					FC7750B71D52A201005D0B5F = {
-						CreatedOnToolsVersion = 7.3.1;
-						TestTargetID = FC7750A31D52A200005D0B5F;
-					};
-					FC7750C21D52A201005D0B5F = {
 						CreatedOnToolsVersion = 7.3.1;
 						TestTargetID = FC7750A31D52A200005D0B5F;
 					};
@@ -219,7 +180,6 @@
 			targets = (
 				FC7750A31D52A200005D0B5F /* test-fastlane */,
 				FC7750B71D52A201005D0B5F /* test-fastlaneTests */,
-				FC7750C21D52A201005D0B5F /* test-fastlaneUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -236,13 +196,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		FC7750B61D52A201005D0B5F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FC7750C11D52A201005D0B5F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -269,14 +222,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FC7750BF1D52A201005D0B5F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FC7750C81D52A201005D0B5F /* test_fastlaneUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -284,11 +229,6 @@
 			isa = PBXTargetDependency;
 			target = FC7750A31D52A200005D0B5F /* test-fastlane */;
 			targetProxy = FC7750B91D52A201005D0B5F /* PBXContainerItemProxy */;
-		};
-		FC7750C51D52A201005D0B5F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FC7750A31D52A200005D0B5F /* test-fastlane */;
-			targetProxy = FC7750C41D52A201005D0B5F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -441,28 +381,6 @@
 			};
 			name = Release;
 		};
-		FC7750D31D52A201005D0B5F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = "test-fastlaneUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "eu.unicredit.rnd.test-fastlaneUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = "test-fastlane";
-			};
-			name = Debug;
-		};
-		FC7750D41D52A201005D0B5F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = "test-fastlaneUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "eu.unicredit.rnd.test-fastlaneUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = "test-fastlane";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -488,14 +406,6 @@
 			buildConfigurations = (
 				FC7750D01D52A201005D0B5F /* Debug */,
 				FC7750D11D52A201005D0B5F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		FC7750D21D52A201005D0B5F /* Build configuration list for PBXNativeTarget "test-fastlaneUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FC7750D31D52A201005D0B5F /* Debug */,
-				FC7750D41D52A201005D0B5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
